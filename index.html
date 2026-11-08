@@ -63,7 +63,7 @@
       <div class="flex items-center gap-2 truncate">
         <span class="text-sm font-bold text-on-surface tracking-tight uppercase leading-none truncate">Pani Gold Project</span>
         <span class="w-1 h-1 rounded-full bg-outline-variant hidden sm:inline"></span>
-        <span id="header-hub-subtitle" class="text-[11px] text-on-surface-variant font-medium hidden md:inline">L&amp;D Training &amp; Competency Hub</span>
+        <span id="header-hub-subtitle" class="text-[11px] text-on-surface-variant font-medium hidden md:inline">L&amp;D Learning &amp; Competency Hub</span>
       </div>
     </div>
 
@@ -202,7 +202,7 @@
       <span>Budaya K3L &amp; Standar Kompetensi Unggul</span>
     </div>
     <h1 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white drop-shadow-sm leading-tight">
-      Training &amp; Development Pani Gold Project
+      Learning &amp; Development Pani Gold Project
     </h1>
     <p class="text-xs sm:text-sm text-amber-50/95 mt-2 leading-relaxed drop-shadow-2xs">
       Mewujudkan operasional tambang emas kelas dunia dengan tenaga kerja yang terlatih, tersertifikasi, dan patuh terhadap regulasi keselamatan pertambangan (Kepmen ESDM 1827 K/30/MEM/2018).
@@ -1661,11 +1661,11 @@
 <span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1 block" id="kpiAnggaran">Rp0</span>
 </div>
 </div>
-<!-- KPI 2: Rencana Training -->
+<!-- KPI 2: Rencana Learning -->
 <div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
 <div>
 <div class="flex items-center gap-1.5">
-  <span class="font-label-md text-label-md text-on-surface-variant uppercase">Rencana Training</span>
+  <span class="font-label-md text-label-md text-on-surface-variant uppercase">Rencana Learning</span>
   <button type="button" onclick="openFormulaModal('kpi-budget-plan')" class="text-outline hover:text-primary transition-colors cursor-pointer" title="Klik untuk lihat rumus & rincian angka">
     <span class="material-symbols-outlined text-[15px]">info</span>
   </button>
@@ -3151,7 +3151,7 @@
     <div class="flex items-center gap-3">
       <img src="Logo-MGR-Long-default.png" alt="Merdeka Gold Resources" class="h-6 w-auto object-contain opacity-85" />
       <span class="h-4 w-px bg-surface-container-high hidden sm:inline-block"></span>
-      <span class="font-label-sm text-label-sm text-on-surface-variant">Pani Gold Project • Training &amp; Development Dashboard</span>
+      <span class="font-label-sm text-label-sm text-on-surface-variant">Pani Gold Project • Learning &amp; Development Dashboard</span>
     </div>
     <div class="flex items-center gap-3">
       <span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded bg-surface-container-high">
@@ -3453,9 +3453,9 @@
       }
     },
     'kpi-budget-plan': {
-      title: 'Total Rencana Pelatihan',
+      title: 'Total Rencana Learning',
       subtitle: 'Panel 2 • KPI Anggaran 2',
-      desc: 'Jumlah seluruh program pelatihan yang diusulkan oleh departemen.',
+      desc: 'Jumlah seluruh program pembelajaran & pelatihan yang diusulkan oleh departemen.',
       formula: 'Total Rencana = Count(Baris di sheet Training_Budget)',
       sheet: 'Training_Budget (Kolom: NO, TITLE/TOPIC, DIVISION/DEPARTMENT)',
       getDetail: () => {
@@ -3566,7 +3566,7 @@
     'kpi-op-refresher': {
       title: 'Tingkat Penyelesaian Refresher Operator',
       subtitle: 'Panel 3 • Operator & Fleet',
-      desc: 'Persentase operator yang telah menyelesaikan pelatihan penyegaran (refresher training) unit alat berat.',
+      desc: 'Persentase operator yang telah menyelesaikan pembelajaran penyegaran (refresher learning) unit alat berat.',
       formula: 'Refresher Rate (%) = (Operator Status Completed / Total Operator) × 100%',
       sheet: 'miningEngineeringOperators (Kolom refresherStatus)',
       getDetail: () => [
@@ -4105,7 +4105,7 @@
     { key: 'Environment', name: 'Environment & Rehabilitation', shortName: 'Environment & Rehabilitation', cat: 'she', focus: 'AMDAL, RKL-RPL, Reklamasi Pasca-Tambang & Water Treatment' },
     { key: 'Management', name: 'Management & General Affair', shortName: 'Management & General Affair', cat: 'support', focus: 'Enterprise Governance, Site Management & Leadership' },
     { key: 'Engineering', name: 'Engineering & Infrastructure', shortName: 'Engineering & Infrastructure', cat: 'engineering', focus: 'K3 Listrik Tegangan Tinggi, SIO Boiler & Pressure Vessel' },
-    { key: 'Human Resources', name: 'Human Resources & Training', shortName: 'Human Resources & Training', cat: 'support', focus: 'Pengembangan SDM, SKKNI & Manajemen Kompetensi' },
+    { key: 'Human Resources', name: 'Human Resources & Learning', shortName: 'Human Resources & Learning', cat: 'support', focus: 'Pengembangan SDM, SKKNI & Manajemen Kompetensi' },
     { key: 'Corporate Social Responsibility', name: 'Corporate Social Responsibility (CSR)', shortName: 'Corporate Social Responsibility (CSR)', cat: 'support', focus: 'Program Pengembangan & Pemberdayaan Masyarakat (PPM)' },
     { key: 'Occupational Health & Safety', name: 'Occupational Health & Safety (OHS)', shortName: 'Occupational Health & Safety (OHS)', cat: 'she', focus: 'Emergency Response Team (ERT), Bantuan Hidup Dasar (BHD) & CRM' },
     { key: 'Processing', name: 'Processing Plant (Heap Leach / ADR)', shortName: 'Processing Plant (Heap Leach / ADR)', cat: 'operations', focus: 'Prosedur ICMC Sianida, Isolasi LOTO, Ruang Terbatas (Confined Space)' }
@@ -6178,7 +6178,7 @@ window.renderCompliancePanel = renderCompliancePanel;
       if (topic) {
         allBudgetTopics.add(topic);
         topicBudgetMap[topic] = (topicBudgetMap[topic] || 0) + cost;
-        topicTypeMap[topic] = b.type || b.category || 'Training';
+        topicTypeMap[topic] = b.type || b.category || 'Learning';
       }
 
       const upperTopic = topic.toUpperCase();
@@ -6342,7 +6342,7 @@ window.renderCompliancePanel = renderCompliancePanel;
     }
     if (elExecDeficitDesc) {
       const totalBillion = (totalAnggaran / 1e9).toFixed(2);
-      elExecDeficitDesc.textContent = `Anggaran ${formatShortMillion(totalAnggaran).replace(/M$/, '')} M untuk ${totalRencana.toLocaleString('id-ID')} rencana training.`;
+      elExecDeficitDesc.textContent = `Anggaran ${formatShortMillion(totalAnggaran).replace(/M$/, '')} M untuk ${totalRencana.toLocaleString('id-ID')} rencana learning.`;
     }
 
     const elExecEsdmDesc = document.getElementById('exec-esdm-desc');
